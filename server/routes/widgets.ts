@@ -6,6 +6,7 @@ const router = express.Router()
 router.get('/', (req, res) => {
   getWidgets()
     .then((widgets) => {
+      console.log(widgets)
       res.json(widgets)
     })
     .catch((err) => {
