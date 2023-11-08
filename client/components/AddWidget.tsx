@@ -30,25 +30,24 @@ function AddWidget(props: Props) {
 
   return (
     <>
-      <div className="widget">
-        <form onSubmit={handleSubmit}>
-          <div>
-            <label htmlFor="name">Name:</label>
-            <input id="name" name="name" />
+      <div>
+        <form className="widget" onSubmit={handleSubmit}>
+          <h3>Add New Widget:</h3>
+
+          <label htmlFor="name">Name:</label>
+          <input id="name" name="name" />
+
+          <label htmlFor="price">Price:</label>
+          <input id="price" type="number" name="price" />
+
+          <label htmlFor="mfg">Manufacturer:</label>
+          <input id="mfg" name="mfg" />
+
+          <label htmlFor="inStock">No. In Stock:</label>
+          <input id="inStock" type="number" name="inStock" />
+          <div className="addButton">
+            <button>Add</button>
           </div>
-          <div>
-            <label htmlFor="price">Price:</label>
-            <input id="price" type="number" name="price" />
-          </div>
-          <div>
-            <label htmlFor="mfg">Manufacturer:</label>
-            <input id="mfg" name="mfg" />
-          </div>
-          <div>
-            <label htmlFor="inStock">No. In Stock:</label>
-            <input id="inStock" type="number" name="inStock" />
-          </div>
-          <button>Add</button>
         </form>
       </div>
     </>
