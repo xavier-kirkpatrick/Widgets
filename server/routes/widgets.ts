@@ -1,5 +1,5 @@
 import express from 'express'
-import { getWidgets } from '../db/db.ts'
+import { deleteWidget, getWidgets } from '../db/db.ts'
 
 const router = express.Router()
 
@@ -14,4 +14,13 @@ router.get('/', (req, res) => {
     })
 })
 
+router.delete('/:id', async (req, res) => {
+  try {
+    const deleteId = Number(req.params.id)
+    await deleteWidget(deleteId)
+    res.sendStatus(200)
+  } catch (error) {
+    console.error(error)
+  }
+})
 export default router

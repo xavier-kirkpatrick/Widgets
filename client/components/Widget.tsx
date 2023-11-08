@@ -15,6 +15,7 @@ function Widgets(props: Props) {
             <li>Manufacturer: {widget.mfg}</li>
             <li>Price ${widget.price}</li>
           </ul>
+          <button className="delete-button">Delete</button>
         </div>
       ))}
     </ul>
