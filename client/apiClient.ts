@@ -10,6 +10,6 @@ export async function getWidgets() {
   return res.body
 }
 
-export async function deleteWidgetById(id) {
+export async function deleteWidgetById(id: number) {
   await request.delete(`${widgetUrl}/${id}`)
 }

@@ -35,13 +35,3 @@ function Widgets(props: Props) {
 }
 
 export default Widgets
-
-{
-  /* <li key={widget.id}>
-      {`${widget.id}: 
-      ${widget.name} - 
-      ${widget.inStock}, 
-      ${widget.mfg}, 
-      $${widget.price}`}
-    </li> */
-}
