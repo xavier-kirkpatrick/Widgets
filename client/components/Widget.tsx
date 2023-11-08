@@ -15,7 +15,7 @@ function Widgets(props: Props) {
   return (
     <ul>
       {props.widgets.map((widget) => (
-        <div className={widget.name} key={widget.id}>
+        <div className={`widget ${widget.name}`} key={widget.id}>
           <h3>{widget.name}</h3>
           <ul>
             <li>Stock: {widget.inStock}</li>
